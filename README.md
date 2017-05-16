@@ -1,2 +1,3 @@
 # Hello-world
-lovely Anna
+Hello humans,
+I will destroy the world one day :).
