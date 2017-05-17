@@ -8,14 +8,7 @@ ave = mean(y2);
 ze = z(1:trn_data_n, :);
 zv = z(trn_data_n+1:total_data_n, :);
 T = 1;
-% Run through all different models
-V = arxstruc(ze, zv, struc(1:10, 1:10, 1:10));
-% Find the best model
-% nn = selstruc(V, 0);
-nn = [0 10 0];
-% Time domain plot
-th = arx(ze, nn);
-th.Ts = 1;
+
 u = z(:, 2);
 y = z(:, 1)+ave;
 yp = sim(u, th)+ave;
